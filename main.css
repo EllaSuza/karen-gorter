@@ -1,0 +1,121 @@
+/* the code below is created for phone (small screens), and larger screens is written within a media querie */
+body {
+    margin: 0;
+    font-family: "Sofia Sans", serif;
+    font-weight: 200;
+    font-size: 2.4vh;
+    line-height: 2em;
+    background-color: rgba(163, 7, 7, 0.05);
+    color: #5d5858;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #faf2f2;
+    width: 100%;
+    box-shadow: 0px 1px 40px rgba(163, 7, 7, 0.4);
+}
+
+header img {
+    width: 30vh;
+    padding: 3vh;
+    display: block;
+}
+
+h2, h3, h4 {
+    font-family: "Comfortaa";
+}
+
+h2, h3 {
+    font-size: 3vh;
+}
+
+h3 {
+    padding-top: 4vh;
+    color: #a30707;
+}
+
+h4 {
+    font-size: 3vh;
+}
+
+/* '#'refers to an id, '.' refers to a class */
+#banner {
+    background: linear-gradient(0deg, rgba(163, 7, 7, 0.7), rgba(163, 7, 7, 0.7)), url(img/banner.jpg);
+    background-size: cover;
+}
+
+#banner div {
+/*with padding, you can condense the value syntax in 2 ways - into four values clock wise (top,right,bottom,left) or two values top-sides */
+    padding: 25vh 3vh 15vh 3vh;
+    color: #faf2f2;
+}
+
+#main-container {
+    padding: 0vh 3vh 6vh 3vh;
+}
+
+footer {
+    background: linear-gradient(0deg, rgba(163, 7, 7, 0.7), rgba(163, 7, 7, 0.7)), url(img/banner.jpg);
+    position: relative;
+}
+
+footer div {
+    padding: 3vh;
+    color: #faf2f2;
+    display: inline-block;
+}
+
+footer a {
+    color: #faf2f2;
+}
+
+/*a link is by default 'display: inline-block', and this svg is within a link */
+footer svg {
+    width: 9vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 3vh;
+}
+
+/* this is a media querie, which means it is a conditional statement dependant on the media width */
+@media (min-width: 768px) {
+
+    header img {
+        padding: 5vh 13vh;
+    }
+
+    h2 {
+        font-size: 12vh;
+    }
+
+    h3 {
+        padding-top: 10vh;
+    }
+
+    #banner div {
+        padding: 30vh 13vh 20vh 13vh;
+    }
+
+    #main-container {
+        padding: 0vh 13vh 20vh 13vh;
+    }
+
+    footer div {
+        padding: 5vh 13vh;
+    }
+
+    footer svg {
+        padding-right: 13vh;
+    }
+
+    footer a {
+        transition: 0.4s;
+    }
+
+    footer a:hover {
+        color: #eac6c4;
+    }
+}
